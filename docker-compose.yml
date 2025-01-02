@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: '.'
+      args:
+        uid: ${UID}
+    container_name: porfolio
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 8000:80
+      - 8443:443
+    networks:
+      porfolio-ale-vinokur:
+        aliases:
+          - porfolio
+
+networks:
+  porfolio-ale-vinokur:
+    name: porfolio-ale-vinokur
