@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Alejandro Vinokur - FullStack Developer specializing in PHP, Laravel, JS, MySQL, PostgreSQL, MongoDB, Python, Web Scraping, API REST, and SOAP.">
+    <meta name="description" content="Alejandro Vinokur - Full Stack Developer specializing in PHP, Laravel, JS, MySQL, PostgreSQL, MongoDB, Python, Web Scraping, API REST, and SOAP.">
     <meta name="author" content="Alejandro Vinokur">
     <title>AleVinokur</title>
     <!-- font icons -->
@@ -12,20 +12,17 @@
 	<link rel="stylesheet" href="assets/css/johndoe.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
                 <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/AleVinokur"><i class="ti-github" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/alejandro-vinokur-758596165/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
             </ul>  
             <div class="header-content">
                 <h4 class="header-subtitle">Hello, I am</h4>
                 <h1 class="header-title">Alejandro Vinokur</h1>
-                <h6 class="header-mono">FullStack Developer</h6>
+                <h6 class="header-mono">Software Developer</h6>
                 <button class="btn btn-primary btn-rounded"><i class="ti-download pr-2"></i>Download Resume</button>
             </div>
         </div>
@@ -51,7 +48,7 @@
                     <img src="assets/imgs/avatar.jpeg" alt="" class="brand-img">
                     <li class="brand-txt">
                         <h5 class="brand-title">Alejandro Vinokur</h5>
-                        <div class="brand-subtitle">FullStack Developer</div>
+                        <div class="brand-subtitle">Software Developer</div>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
@@ -71,13 +68,6 @@
     <div class="container-fluid">
         <div id="about" class="row about-section">
             <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Who am I?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">A FullStack Developer / Focused on Backend</h5>
-                <p class="mt-20">I am a FullStack Developer with expertise in PHP, Laravel, JavaScript, MySQL, PostgreSQL, MongoDB, Python, Web Scraping, API REST, and SOAP. I am passionate about building scalable web applications and providing efficient solutions.</p>
-                <button class="btn btn-outline-danger"><i class="icon-down-circled2"></i>Download My CV</button>
-            </div>
-            <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Personal Info</h3>
                 <span class="line mb-5"></span>
                 <ul class="mt40 info list-unstyled">
@@ -87,12 +77,21 @@
                     <li><span>Location</span> : Buenos Aires, Capital Federal, Argentina.</li>
                 </ul>
                 <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
                     <li class="social-item"><a class="social-link" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/AleVinokur"><i class="ti-github" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/alejandro-vinokur-758596165/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
                 </ul>  
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Who am I?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">Software Developer</h5>
+                <p class="mt-20">I am a passionate Software Developer who thrives on solving complex challenges and creating impactful digital solutions. With a strong foundation in full-stack development, I bring a unique blend of technical expertise and a keen eye for detail to every project I undertake.
+
+                    What sets me apart is my commitment to continuous learning and adaptability in an ever-evolving tech landscape. Beyond writing clean and efficient code, I focus on delivering scalable systems that align with user needs and business goals.
+                    
+                    Collaboration and innovation are at the heart of my work. Whether working with teams or independently, I embrace challenges as opportunities to grow and deliver results that make a difference.</p>
+                <button class="btn btn-outline-danger"><i class="icon-down-circled2"></i>Download My CV</button>
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">My Expertise</h3>
@@ -101,31 +100,23 @@
                     <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6>PHP & Laravel</h6>
-                        <p class="subtitle">Building robust backend systems.</p>
+                        <p class="subtitle">Designing and implementing scalable backend solutions with a focus on clean architecture and performance optimization.</p>
                         <hr>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
+                    <div class="col-1 text-danger pt-1"><i class="ti-user icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>JavaScript</h6>
-                        <p class="subtitle">Creating dynamic and interactive web applications.</p>
+                        <h6>JavaScript & JQuery</h6>
+                        <p class="subtitle">Building dynamic and interactive web interfaces to enhance user experience.</p>
                         <hr>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
+                    <div class="col-1 text-danger pt-1"><i class="ti-server icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6>Database Management</h6>
-                        <p class="subtitle">Expertise in MySQL, PostgreSQL, and MongoDB.</p>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-bar-chart icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Web Scraping</h6>
-                        <p class="subtitle">Extracting data from websites using Python.</p>
+                        <p class="subtitle">Proficient in managing relational and non-relational databases like MySQL, PostgreSQL, and MongoDB for high-performance applications.</p>
                         <hr>
                     </div>
                 </div>
@@ -133,7 +124,7 @@
                     <div class="col-1 text-danger pt-1"><i class="ti-package icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6>API Development</h6>
-                        <p class="subtitle">Building and integrating RESTful and SOAP APIs.</p>
+                        <p class="subtitle">Crafting secure, efficient, and well-documented RESTful and SOAP APIs for seamless integration across platforms.</p>
                         <hr>
                     </div>
                 </div>
@@ -146,6 +137,7 @@
         <div class="container">
             <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
             <div class="row">
+                <!-- Expertise Section -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
                        <div class="card-header">
@@ -156,15 +148,19 @@
                         </div>
                         <div class="card-body">
                             <h6 class="title text-danger">2023 - Present</h6>
-                            <P>FullStack Developer</P>
-                            <P class="subtitle">Developing and maintaining web applications using PHP, Laravel, JavaScript, and various databases.</P>
+                            <p>Full Stack Developer - <strong>IT ROCK</strong></p>
+                            <p class="subtitle">Designing, developing, and maintaining high-performance web applications using PHP, Laravel, JavaScript, and RESTful APIs. Implementing scalable architectures and optimizing system performance.</p>
                             <hr>
+                            <h6 class="title text-danger">2023 - Present</h6>
+                            <p>Full Stack Developer - <strong>Freelance</strong></p>
+                            <p class="subtitle">Provided tailored software development solutions to meet client-specific needs. Specialized in designing and implementing scalable and efficient systems, ensuring high-quality deliverables and fostering strong client relationships.</p>
                             <h6 class="title text-danger">2022 - 2023</h6>
-                            <P>Help Desk</P>
-                            <P class="subtitle">Provided technical support and resolved issues for clients.</P>
+                            <p>Technical Support Analyst - <strong>CleverSoft</strong></p>
+                            <p class="subtitle">Provided IT support, troubleshooting, and maintenance for end-users, ensuring seamless operations.</p>
                         </div>
                     </div>
                 </div>
+                <!-- Education Section -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card">
                        <div class="card-header">
@@ -174,20 +170,21 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h6 class="title text-danger">2017 - Present</h6>
-                            <P>B.E Computer Engineering</P>
-                            <P class="subtitle">Studied computer engineering with a focus on software development.</P>
+                            <h6 class="title text-danger">2024 - Present</h6>
+                            <p>AWS Certification (In Progress)</p>
+                            <p class="subtitle">Specializing in cloud infrastructure, deployment, and architecture on AWS.</p>
                             <hr>
-                            <h6 class="title text-danger">2016 - 2017</h6>
-                            <P>Diploma in Computer Engineering</P>
-                            <P class="subtitle">Completed a diploma in computer engineering, gaining foundational knowledge in programming and systems.</P>
+                            <h6 class="title text-danger">2017 - 2022</h6>
+                            <p>Bachelor’s Degree in Computer Science</p>
+                            <p class="subtitle">Focused on software development, algorithms, and database management.</p>
                             <hr>
-                            <h6 class="title text-danger">2015 - 2016</h6>
-                            <P>High School Degree</P>
-                            <P class="subtitle">Graduated from high school with a focus on science and technology.</P>
+                            <h6 class="title text-danger">2012 - 2017</h6>
+                            <p>High School Diploma</p>
+                            <p class="subtitle">Graduated with a focus on IT and programming fundamentals.</p>
                         </div>
                     </div>
                 </div>
+                <!-- Skills and Languages Section -->
                 <div class="col-lg-4">
                     <div class="card">
                        <div class="card-header">
@@ -197,33 +194,37 @@
                             </div>
                         </div>
                         <div class="card-body pb-2">
-                           <h6>HTML5 & CSS3</h6>
+                            <h6>PHP</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"></div>
+                            </div>
+                            <h6>Laravel</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"></div>
                             </div>
                             <h6>JavaScript</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"></div>
                             </div>
-                            <h6>PHP & Laravel</h6>
+                            <h6>Jquery</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"></div>
+                            </div>
+                            <h6>Python</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"></div>
                             </div>
                             <h6>MySQL & PostgreSQL</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"></div>
                             </div>
-                            <h6>MongoDB</h6>
+                            <h6>API REST</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%"></div>
                             </div>
-                            <h6>Python & Web Scraping</h6>
+                            <h6>Docker</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>API REST & SOAP</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%"></div>
                             </div>
                         </div>
                     </div>
@@ -235,24 +236,20 @@
                             </div>
                         </div>
                         <div class="card-body pb-2">
-                           <h6>English</h6>
+                            <h6>English</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>French</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%"></div>
                             </div>
                             <h6>Spanish</h6>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
 
     <section class="section bg-dark text-center">
         <div class="container">
@@ -263,8 +260,8 @@
                             <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">500</h1>
-                            <p class="text-light mb-1">Hours Worked</p>
+                            <h1 class="text-danger font-weight-bold font40">+3</h1>
+                            <p class="text-light mb-1">Experience Years</p>
                         </div>
                     </div>
                 </div>
@@ -274,7 +271,7 @@
                             <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">50K</h1>
+                            <h1 class="text-danger font-weight-bold font40">+20</h1>
                             <p class="text-light mb-1">Project Finished</p>
                         </div>
                     </div>
@@ -285,8 +282,8 @@
                             <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">200K</h1>
-                            <p class="text-light mb-1">Happy Clients</p>
+                            <h1 class="text-danger font-weight-bold font40">+ 1M</h1>
+                            <p class="text-light mb-1">Happy Users</p>
                         </div>
                     </div>
                 </div>
@@ -379,81 +376,6 @@
         </div>
     </section>
 
-    <section class="section bg-custom-gray" id="price">
-        <div class="container">
-            <h1 class="mb-5"><span class="text-danger">Packs</span> Pricing</h1>
-            <div class="row align-items-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Free</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">0</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">5 <span class="text-muted">Project</span></li>
-                            <li class="list-item">1GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item"><span class="text-muted">No Domain</span></li>
-                            <li class="list-item">1 <span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Basic</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">10</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">50 <span class="text-muted">Project</span></li>
-                            <li class="list-item">10GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">1<span class="text-muted">Domain</span></li>
-                            <li class="list-item">5 <span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center price-card-requried mb-4">
-                        <h3 class="price-card-title">Exclusive</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">25</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">150 <span class="text-muted">Project</span></li>
-                            <li class="list-item">15GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">5<span class="text-muted"> Domain</span></li>
-                            <li class="list-item">15<span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Pro</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">99</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">500 <span class="text-muted">Project</span></li>
-                            <li class="list-item">1000GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">10<span class="text-muted"> Domain</span></li>
-                            <li class="list-item">Unlimite<span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="section bg-dark py-5">
         <div class="container text-center">
             <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance</h2>
@@ -644,75 +566,6 @@
         </div>            
     </section>
     <!-- End of portfolio section -->
-
-    <section class="section" id="blog">
-        <div class="container">
-            <h2 class="mb-5">Latest <span class="text-danger">News</span></h2>
-            <div class="row">
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Consectetur adipisicing elit</h6>
-
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                            <a href="#"><i class="ti-comment"></i> 123</a>
-                        </p>
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
-
-                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
-                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Explicabo illo</h6>
-
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                            <a href="#"><i class="ti-comment"></i> 264</a>
-                        </p>
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h4 class="title">Porro Quisqua</h4>
-
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 431</a>
-                            <a href="#"><i class="ti-comment"></i> 312</a>
-                        </p>
-                        
-                        <p> consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-
-            </div>
-        </div>
-    </section>
 
     <div class="section contact" id="contact">
         <div id="map" class="map"></div>
