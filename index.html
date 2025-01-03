@@ -15,15 +15,18 @@
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://github.com/AleVinokur"><i class="ti-github" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/alejandro-vinokur-758596165/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" target="_blank" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" target="_blank" href="https://github.com/AleVinokur"><i class="ti-github" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" target="_blank" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" target="_blank" href="https://www.linkedin.com/in/alejandro-vinokur-758596165/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
             </ul>  
             <div class="header-content">
                 <h4 class="header-subtitle">Hello, I am</h4>
                 <h1 class="header-title">Alejandro Vinokur</h1>
                 <h6 class="header-mono">Software Developer</h6>
-                <button class="btn btn-primary btn-rounded"><i class="ti-download pr-2"></i>Download Resume</button>
+                <a href="assets/cv/Alejandro-Vinokur.pdf" download="Alejandro-Vinokur-Resume" class="btn btn-primary btn-rounded">
+                    <i class="ti-download pr-2"></i>Download Resume
+                </a>                
             </div>
         </div>
     </header>
@@ -77,10 +80,11 @@
                     <li><span>Location</span> : Buenos Aires, Capital Federal, Argentina.</li>
                 </ul>
                 <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://github.com/AleVinokur"><i class="ti-github" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/alejandro-vinokur-758596165/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                </ul>  
+                    <li class="social-item"><a class="social-link" href="#" target="_blank"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/AleVinokur" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="#" target="_blank"><i class="ti-google" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/alejandro-vinokur-758596165/" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                </ul>    
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Who am I?</h3>
@@ -91,7 +95,9 @@
                     What sets me apart is my commitment to continuous learning and adaptability in an ever-evolving tech landscape. Beyond writing clean and efficient code, I focus on delivering scalable systems that align with user needs and business goals.
                     
                     Collaboration and innovation are at the heart of my work. Whether working with teams or independently, I embrace challenges as opportunities to grow and deliver results that make a difference.</p>
-                <button class="btn btn-outline-danger"><i class="icon-down-circled2"></i>Download My CV</button>
+                    <a href="assets/cv/Alejandro-Vinokur.pdf" download="Alejandro-Vinokur-Resume" class="btn btn-outline-danger">
+                        <i class="icon-down-circled2"></i>Download My CV
+                    </a>
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">My Expertise</h3>
@@ -151,9 +157,6 @@
                             <p>Full Stack Developer - <strong>IT ROCK</strong></p>
                             <p class="subtitle">Designing, developing, and maintaining high-performance web applications using PHP, Laravel, JavaScript, and RESTful APIs. Implementing scalable architectures and optimizing system performance.</p>
                             <hr>
-                            <h6 class="title text-danger">2023 - Present</h6>
-                            <p>Full Stack Developer - <strong>Freelance</strong></p>
-                            <p class="subtitle">Provided tailored software development solutions to meet client-specific needs. Specialized in designing and implementing scalable and efficient systems, ensuring high-quality deliverables and fostering strong client relationships.</p>
                             <h6 class="title text-danger">2022 - 2023</h6>
                             <p>Technical Support Analyst - <strong>CleverSoft</strong></p>
                             <p class="subtitle">Provided IT support, troubleshooting, and maintenance for end-users, ensuring seamless operations.</p>
@@ -306,73 +309,92 @@
         <div class="container">
             <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
             <div class="row">
+                <!-- Custom Software Development -->
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                       <div class="card-header has-icon">
+                        <div class="card-header has-icon">
+                            <i class="ti-desktop text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Custom Software Development</h5>
+                            <p class="subtitle">
+                                I provide tailored software development services, specializing in creating scalable and efficient web applications, management systems, and custom solutions that meet unique business needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Web Scraping and Automation -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                        <div class="card-header has-icon">
                             <i class="ti-vector text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Ullam</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-dark">Web Scraping and Automation</h5>
+                            <p class="subtitle">
+                                Expertise in building web scrapers and automation scripts using Python and modern tools like Puppeteer and BeautifulSoup. I deliver data extraction solutions to streamline workflows and optimize decision-making.
+                            </p>
                         </div>
                     </div>
                 </div>
+                <!-- Backend and API Development -->
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-write text-danger" aria-hidden="true"></i>
+                        <div class="card-header has-icon">
+                            <i class="ti-target text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Asperiores</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-dark">Backend and API Development</h5>
+                            <p class="subtitle">
+                                I build robust backend systems and RESTful APIs using Laravel, ensuring secure, scalable, and well-documented interfaces for seamless integration with frontends and third-party services.
+                            </p>
                         </div>
                     </div>
                 </div>
+                <!-- Cloud Solutions and Deployment -->
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-package text-danger" aria-hidden="true"></i>
+                        <div class="card-header has-icon">
+                            <i class="ti-cloud text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Tempora</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-dark">Cloud Solutions and Deployment</h5>
+                            <p class="subtitle">
+                                I provide cloud-based deployment solutions, leveraging AWS EC2 and Docker to ensure your applications are reliable, efficient, and ready for scaling as your business grows.
+                            </p>
                         </div>
                     </div>
                 </div>
+                <!-- Data Base Manager -->
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-map-alt text-danger" aria-hidden="true"></i>
+                        <div class="card-header has-icon">
+                            <i class="ti-server text-danger" aria-hidden="true"></i> <!-- Icono representativo para bases de datos -->
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Provident</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-dark">Database Design and Optimization</h5>
+                            <p class="subtitle">
+                                I design, manage, and optimize databases to ensure efficient data storage and retrieval. I deliver scalable solutions that meet the demands of modern applications.
+                            </p>
                         </div>
                     </div>
-                </div>
+                </div>                
+                <!-- Technical Support and Consultancy -->
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Consectetur</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
+                        <div class="card-header has-icon">
                             <i class="ti-support text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Veritatis</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-dark">Technical Support and Consultancy</h5>
+                            <p class="subtitle">
+                                Providing expert advice and ongoing support to help businesses adopt innovative technologies and maintain optimal performance in their digital solutions.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>        
         </div>
     </section>
 
@@ -598,7 +620,7 @@
                                 <i class="ti-mobile icon-md"></i>
                             </div>
                             <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (123) 456-789</span></h6>
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (54) 3885864499</span></h6>
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -606,7 +628,7 @@
                                 <i class="ti-map-alt icon-md"></i>
                             </div>
                             <div class="col-10">
-                                <h6 class="d-inline">Address :<br> <span class="text-muted">12345 Fake ST NoWhere AB Country.</span></h6>
+                                <h6 class="d-inline">Location :<br> <span class="text-muted">Buenos Aires, Capital Federal, Argentina.</span></h6>
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -614,16 +636,13 @@
                                 <i class="ti-envelope icon-md"></i>
                             </div>
                             <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted">info@website.com</span></h6>
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">alevinokur@gmail.com</span></h6>
                             </div>
                         </div>
-                        <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-                        </ul> 
+                        <li class="social-item"><a class="social-link text-dark" target="_blank" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                        <li class="social-item"><a class="social-link text-dark" target="_blank" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                        <li class="social-item"><a class="social-link text-dark" target="_blank" href="https://github.com/AleVinokur"><i class="ti-github" aria-hidden="true"></i></a></li>
+                        <li class="social-item"><a class="social-link text-dark" target="_blank" href="https://www.linkedin.com/in/alejandro-vinokur-758596165/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
                     </div>
                 </div>
             </div>
