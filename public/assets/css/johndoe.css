@@ -11532,6 +11532,12 @@ pre .code {
   color: inherit;
 }
 
+@media (max-width: 767px) {
+  .header .header-content .header-title {
+      line-height: 1 !important; 
+  }
+}
+
 .header .header-content .header-mono {
   letter-spacing: 5px;
   font-weight: 500;
