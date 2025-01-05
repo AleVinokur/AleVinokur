@@ -11155,29 +11155,22 @@ p {
   border-radius: 0;
   padding-bottom: 4px;
   margin: 0 auto 20px;
-  max-width: 400px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  max-width: 800px;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .portfolio .filters a {
-  -webkit-flex-basis: 0;
-      -ms-flex-preferred-size: 0;
-          flex-basis: 0;
-  display: block;
+  flex-grow: 1; /* Permite que los enlaces se expandan uniformemente */
+  text-align: center; /* Asegura que el texto esté centrado */
   color: #212529;
   font-size: 13px;
   font-weight: 500;
-  opacity: .7;
+  opacity: 0.7;
   padding: 4px 10px;
+  margin: 0 5px; /* Espaciado horizontal entre los enlaces */
+  white-space: nowrap; /* Evita que el texto se divida en varios renglones */
   transition: 0.3s;
-  -webkit-transition: 0.3s;
 }
 
 .portfolio .filters a:first-child {
