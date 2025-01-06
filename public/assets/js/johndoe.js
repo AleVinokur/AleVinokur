@@ -39,7 +39,7 @@ $(window).on("load", function() {
       animationOptions: {
           duration: 750,
           easing: "linear",
-          queue: !1
+          queue: false
       }
   });
 
@@ -53,13 +53,38 @@ $(window).on("load", function() {
           animationOptions: {
               duration: 750,
               easing: "linear",
-              queue: !1
+              queue: false
           }
       });
       return false; // Prevenir comportamiento predeterminado del enlace
   });
 });
 
+$(document).ready(function() {
+  $('.portfolio-item .btn-primary').click(function(e) {
+    e.preventDefault();
+    
+    var projectImage = $(this).closest('.portfolio-item').find('.img-fluid').attr('src');
+    var projectDescription = $(this).closest('.content-holder').find('.subtitle').html(); 
+    var projectTitle = $(this).closest('.content-holder').find('.title').html(); 
+
+    $('#popup-img').attr('src', projectImage);
+    $('#popup-title').html(projectTitle); 
+    $('#popup-description').html(projectDescription); 
+
+    $('#project-popup').fadeIn();
+  });
+  
+  $('.popup .close').click(function() {
+    $('#project-popup').fadeOut();
+  });
+
+  $(window).click(function(event) {
+    if ($(event.target).is('#project-popup')) {
+      $('#project-popup').fadeOut();
+    }
+  });
+});
 
 
 // google maps
