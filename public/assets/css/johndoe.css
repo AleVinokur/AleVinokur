@@ -11267,17 +11267,8 @@ p {
 
 @media (max-width: 768px) {
 
-  .popup {
+  .popup .popup-content{
     margin-top: 300px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .popup-content {
-    max-width: 90%;
-    max-height: 90%;
-    margin: auto;
-    padding: 15px;
   }
 
   .popup img {
@@ -11290,6 +11281,7 @@ p {
 
   #popup-description {
     font-size: 16px !important;
+    font-weight: 400 !important;
   }
 }
 

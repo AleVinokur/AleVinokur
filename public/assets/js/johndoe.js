@@ -61,6 +61,13 @@ $(window).on("load", function() {
 });
 
 $(document).ready(function() {
+
+  document.querySelectorAll('.portfolio a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+    });
+  });
+
   $('.portfolio-item .btn-primary').click(function(e) {
     e.preventDefault();
     
