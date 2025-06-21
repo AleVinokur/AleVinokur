@@ -2,13 +2,6 @@
 
 > **Full Stack Developer especializado en soluciones escalables, automatización e integraciones complejas.**
 
-* [Español](#español)
-* [English](#english)
-
----
-
-## Español
-
 Soy Alejandro Vinokur, ingeniero en informática en formación y desarrollador full stack con más de 3 años de experiencia creando soluciones tecnológicas robustas, escalables y centradas en resultados. Mi enfoque está orientado a la calidad del código, arquitectura limpia, y aplicaciones de alto rendimiento.
 
 ---
@@ -59,7 +52,3 @@ Soy Alejandro Vinokur, ingeniero en informática en formación y desarrollador f
 \[![Git](https://img.shields.io/badge/Git-%23F05032.svg?logo=git\&logoColor=white)]
 
 ---
-
-## English
-
-I'm Alejandro Vinokur, a computer engineering student and full stack developer with over 3 years of experience building robust, scalable, and result-driven technology solutions. My focus is on code quality, clean architecture, and high-performance applications.
