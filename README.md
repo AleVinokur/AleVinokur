@@ -6,7 +6,7 @@
 Soy Alejandro Vinokur, ingeniero en informática en formación y desarrollador full stack con más de 3 años de experiencia creando soluciones tecnológicas robustas, escalables y centradas en resultados. Mi enfoque está orientado a la calidad del código, arquitectura limpia, y aplicaciones de alto rendimiento.
 
 ## English
-> **Software Stack Developer specialized in scalable solutions, automation, and complex integrations.
+> **Software Stack Developer specialized in scalable solutions, automation, and complex integrations.**
 
 I'm Alejandro Vinokur, a computer engineering student and full stack developer with over 3 years of experience building robust, scalable, and results-focused technology solutions. My approach emphasizes code quality, clean architecture, and high-performance applications.
 
