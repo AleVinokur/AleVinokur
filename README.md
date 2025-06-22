@@ -78,8 +78,6 @@ I'm Alejandro Vinokur, a computer engineering student and software developer wit
 \[![Git](https://img.shields.io/badge/Git-%23F05032.svg?logo=git\&logoColor=white)]
 \[![Composer](https://img.shields.io/badge/Composer-%23808080.svg?logo=composer\&logoColor=white)]
 \[![Postman](https://img.shields.io/badge/Postman-%23FF6C37.svg?logo=postman\&logoColor=white)]
-\[![GLPI](https://img.shields.io/badge/GLPI-%23B20000.svg)]
-\[![Zabbix](https://img.shields.io/badge/Zabbix-%23DC382D.svg)]
 
 ---
 
