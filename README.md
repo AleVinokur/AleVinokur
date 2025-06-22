@@ -45,7 +45,7 @@ I'm Alejandro Vinokur, a computer engineering student and software developer wit
 
 ---
 
-### 🚀 Expertise
+### 🚀 Conocimiento // Expertise
 
 \[![Backend Development](https://img.shields.io/badge/Backend_Development-informational?style=flat)]
 \[![API Architecture](https://img.shields.io/badge/API_Architecture-informational?style=flat)]
