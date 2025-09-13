@@ -11781,3 +11781,22 @@ pre .code {
   display: block;
   margin-top: 10px;
 }
+
+/* Consistencia en el tamaño de las cards de servicios */
+#service .card {
+  min-height: 226px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+#service .card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media (max-width: 991.98px) {
+  #service .card {
+    min-height: 226px;
+  }
+}
