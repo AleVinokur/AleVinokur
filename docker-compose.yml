@@ -5,6 +5,7 @@ services:
       context: '.'
       args:
         uid: ${UID}
+        gid: ${GID}
     container_name: porfolio
     volumes:
       - .:/var/www/html
