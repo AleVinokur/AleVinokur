@@ -37,9 +37,9 @@ jobs:
       - name: Validate static site
         run: npm run test:static
         env:
-          # Review can proceed before the public Formspree ID is supplied.
-          # Pushes to main still fail validation while FORM_ID is present.
-          ALLOW_FORM_PLACEHOLDER: ${{ github.event_name == 'pull_request' && '1' || '0' }}
+          # The deploy job replaces this source placeholder with the repository
+          # variable after checking that the variable has been configured.
+          ALLOW_FORM_PLACEHOLDER: '1'
 
   # Deploy only after validation and never from a pull request.
   deploy:
@@ -55,11 +55,21 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Assemble static site
+        env:
+          FORMSPREE_FORM_ID: ${{ vars.FORMSPREE_FORM_ID }}
         run: |
+          if [[ ! "$FORMSPREE_FORM_ID" =~ ^[A-Za-z0-9]+$ ]]; then
+            echo "Set the FORMSPREE_FORM_ID repository variable to your public Formspree form ID." >&2
+            exit 1
+          fi
+
           mkdir -p _site/public
           cp index.html robots.txt sitemap.xml _site/
           cp -R public/assets _site/public/
+          cp public/favicon.ico _site/public/
           cp public/googlecaJgGMBs13zwWyTSzu7QguiHSImai_CjC2OhndvVVqc.html _site/
+          sed -i "s|/FORM_ID|/$FORMSPREE_FORM_ID|g" _site/index.html
+          grep -Fq "action=\"https://formspree.io/f/$FORMSPREE_FORM_ID\"" _site/index.html
           touch _site/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
