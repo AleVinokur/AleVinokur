@@ -38,7 +38,7 @@ The validation checks public claims, local assets, form fields, accessibility ho
 The form posts to a Formspree form ID and uses progressive client-side validation. Before deployment:
 
 1. Create or select the Formspree form.
-2. Replace `FORM_ID` in `index.html` with the public form ID.
+2. In the GitHub repository, open **Settings → Secrets and variables → Actions → Variables** and create a repository variable named `FORMSPREE_FORM_ID` whose value is the public form ID (the part after `/f/` in the Formspree endpoint). The Pages workflow validates the value and replaces the `FORM_ID` placeholder only in the deployment artifact, so no source edit is needed.
 3. Restrict submissions to `alevinokur.github.io` in Formspree.
 4. Keep Formspree spam protection enabled.
 
