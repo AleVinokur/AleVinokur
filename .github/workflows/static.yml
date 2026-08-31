@@ -58,6 +58,7 @@ jobs:
         run: |
           mkdir -p _site/public
           cp index.html robots.txt sitemap.xml _site/
+          cp public/favicon.ico _site/public/
           cp -R public/assets _site/public/
           cp public/googlecaJgGMBs13zwWyTSzu7QguiHSImai_CjC2OhndvVVqc.html _site/
           touch _site/.nojekyll
