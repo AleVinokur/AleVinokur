@@ -6,6 +6,9 @@ on:
   push:
     branches: ["main"]
 
+  pull_request:
+    branches: ["main"]
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -22,8 +25,26 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate static site
+        run: npm run test:static
+        env:
+          # The deploy job replaces this source placeholder with the repository
+          # variable after checking that the variable has been configured.
+          ALLOW_FORM_PLACEHOLDER: '1'
+
+  # Deploy only after validation and never from a pull request.
   deploy:
+    if: github.event_name != 'pull_request'
+    needs: validate
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -33,11 +54,28 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Assemble static site
+        env:
+          FORMSPREE_FORM_ID: ${{ vars.FORMSPREE_FORM_ID }}
+        run: |
+          if [[ ! "$FORMSPREE_FORM_ID" =~ ^[A-Za-z0-9]+$ ]]; then
+            echo "Set the FORMSPREE_FORM_ID repository variable to your public Formspree form ID." >&2
+            exit 1
+          fi
+
+          mkdir -p _site/public
+          cp index.html robots.txt sitemap.xml _site/
+          cp public/favicon.ico _site/public/
+          cp -R public/assets _site/public/
+          cp public/favicon.ico _site/public/
+          cp public/googlecaJgGMBs13zwWyTSzu7QguiHSImai_CjC2OhndvVVqc.html _site/
+          sed -i "s|/FORM_ID|/$FORMSPREE_FORM_ID|g" _site/index.html
+          grep -Fq "action=\"https://formspree.io/f/$FORMSPREE_FORM_ID\"" _site/index.html
+          touch _site/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: '_site'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

@@ -1,760 +1,178 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description"
-        content="Alejandro Vinokur - Full Stack Developer delivering scalable PHP & Python solutions, microservices, Docker, AWS, and AI integrations with OpenAI, DocumentAI and Google Vision AI.">
+    <meta name="description" content="Alejandro Vinokur is a Software Engineer with a backend focus on APIs, integrations, asynchronous workflows, and production reliability.">
     <meta name="author" content="Alejandro Vinokur">
-    <title>AleVinokur</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="/AleVinokur/public/assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + JohnDoe main styles -->
-    <link rel="stylesheet" href="/AleVinokur/public/assets/css/johndoe.css">
+    <meta name="theme-color" content="#17263c">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Alejandro Vinokur | Software Engineer">
+    <meta property="og:description" content="Backend engineering for integrations, asynchronous workflows, and reliable production systems.">
+    <meta property="og:url" content="https://alevinokur.github.io/AleVinokur/">
+    <meta property="og:image" content="https://alevinokur.github.io/AleVinokur/public/assets/imgs/header.jpg">
+    <link rel="canonical" href="https://alevinokur.github.io/AleVinokur/">
+    <link rel="icon" href="public/favicon.ico">
+    <link rel="stylesheet" href="public/assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="public/assets/css/johndoe.css">
+    <link rel="stylesheet" href="public/assets/css/portfolio.css">
+    <title>Alejandro Vinokur | Software Engineer</title>
 </head>
+<body data-spy="scroll" data-target="#portfolio-navigation" data-offset="90" id="home">
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <header class="header">
+    <header class="header" aria-labelledby="hero-title">
         <div class="container">
-            <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" target="_blank" href="#"><i
-                            class="ti-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" target="_blank"
-                        href="https://github.com/AleVinokur"><i class="ti-github" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" target="_blank" href="#"><i class="ti-google"
-                            aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" target="_blank"
-                        href="https://www.linkedin.com/in/alejandro-vinokur-758596165/"><i class="ti-linkedin"
-                            aria-hidden="true"></i></a></li>
+            <ul class="social-icons pt-3" aria-label="Professional profiles">
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/AleVinokur" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="ti-github" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/alejandro-vinokur-758596165/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="mailto:alevinokur@gmail.com" aria-label="Email"><i class="ti-email" aria-hidden="true"></i></a></li>
             </ul>
             <div class="header-content">
-                <h4 class="header-subtitle">Hello, I am</h4>
-                <h1 class="header-title">Alejandro Vinokur</h1>
-                <h6 class="header-mono">Software Developer</h6>
-                <a href="/AleVinokur/public/assets/cv/Alejandro-Vinokur.pdf" download="Alejandro-Vinokur-Resume"
-                    class="btn btn-primary btn-rounded">
-                    <i class="ti-download pr-2"></i>Download Resume
-                </a>
+                <p class="header-subtitle">Hello, I am</p>
+                <h1 class="header-title" id="hero-title">Alejandro Vinokur</h1>
+                <p class="header-mono">Software Engineer · Buenos Aires</p>
+                <h2 class="hero-value-prop">I build backend systems that stay reliable when integrations and production constraints get real.</h2>
+                <a href="public/assets/cv/Alejandro-Vinokur.pdf" download="Alejandro-Vinokur-Resume" class="btn btn-primary btn-rounded"><i class="ti-download pr-2" aria-hidden="true"></i>Download Resume</a>
             </div>
         </div>
     </header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" id="portfolio-navigation" data-spy="affix" data-offset-top="510" aria-label="Primary navigation">
         <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbar-content">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resume</a>
-                    </li>
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
                 </ul>
-                <ul class="navbar-nav brand">
-                    <img src="/AleVinokur/public/assets/imgs/avatar.jpeg" alt="" class="brand-img">
-                    <li class="brand-txt">
-                        <h5 class="brand-title">Alejandro Vinokur</h5>
-                        <div class="brand-subtitle">Software Developer</div>
-                    </li>
+                <ul class="navbar-nav brand" aria-hidden="true">
+                    <li><img src="public/assets/imgs/avatar.jpeg" alt="" class="brand-img"></li>
+                    <li class="brand-txt"><h5 class="brand-title">Alejandro Vinokur</h5><div class="brand-subtitle">Software Engineer · Backend focus</div></li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item last-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Personal Info</h3>
-                <span class="line mb-5"></span>
-                <ul class="mt40 info list-unstyled">
-                    <li><span>Birthdate</span> : 04/11/1997</li>
-                    <li><span>Email</span> : alevinokur@gmail.com</li>
-                    <li><span>Phone</span> : + (54) 3885864499</li>
-                    <li><span>Location</span> : Buenos Aires, Capital Federal, Argentina.</li>
-                </ul>
-                <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="#" target="_blank"><i class="ti-instagram"
-                                aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://github.com/AleVinokur"
-                            target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#" target="_blank"><i class="ti-google"
-                                aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link"
-                            href="https://www.linkedin.com/in/alejandro-vinokur-758596165/" target="_blank"><i
-                                class="ti-linkedin" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Who am I?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">Software Developer</h5>
-                <p class="mt-20">I am a passionate Software Developer who thrives on solving complex challenges and
-                    creating impactful digital solutions. With a strong foundation in full-stack development, I bring a
-                    unique blend of technical expertise and a keen eye for detail to every project I undertake.
 
-                    What sets me apart is my commitment to continuous learning and adaptability in an ever-evolving tech
-                    landscape. Beyond writing clean and efficient code, I focus on delivering scalable systems that
-                    align with user needs and business goals.
-
-                    Collaboration and innovation are at the heart of my work. Whether working with teams or
-                    independently, I embrace challenges as opportunities to grow and deliver results that make a
-                    difference.</p>
-                <a href="/AleVinokur/public/assets/cv/Alejandro-Vinokur.pdf" download="Alejandro-Vinokur-Resume"
-                    class="btn btn-outline-danger">
-                    <i class="icon-down-circled2"></i>Download My CV
-                </a>
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">My Expertise</h3>
-                <span class="line mb-5"></span>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>PHP & Laravel</h6>
-                        <p class="subtitle">Designing and implementing scalable backend solutions with a focus on clean
-                            architecture and performance optimization.</p>
-                        <hr>
-                    </div>
+    <main id="main-content">
+        <section class="container-fluid" id="about" aria-labelledby="about-title">
+            <h2 class="sr-only" id="about-title">About Alejandro Vinokur</h2>
+            <div class="row about-section">
+                <div class="col-lg-4 about-card">
+                    <h3 class="font-weight-light">Personal Info</h3><span class="line mb-5"></span>
+                    <ul class="mt40 info list-unstyled">
+                        <li><span>Email</span> : <a href="mailto:alevinokur@gmail.com">alevinokur@gmail.com</a></li>
+                        <li><span>Location</span> : Buenos Aires, Argentina</li>
+                        <li><span>Availability</span> : Full-time roles and selective freelance</li>
+                    </ul>
+                    <ul class="social-icons pt-3" aria-label="Contact profiles">
+                        <li class="social-item"><a class="social-link" href="https://github.com/AleVinokur" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="ti-github" aria-hidden="true"></i></a></li>
+                        <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/alejandro-vinokur-758596165/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                        <li class="social-item"><a class="social-link" href="mailto:alevinokur@gmail.com" aria-label="Email"><i class="ti-email" aria-hidden="true"></i></a></li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-user icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>JavaScript & JQuery</h6>
-                        <p class="subtitle">Building dynamic and interactive web interfaces to enhance user experience.
-                        </p>
-                        <hr>
-                    </div>
+                <div class="col-lg-4 about-card">
+                    <h3 class="font-weight-light">Who am I?</h3><span class="line mb-5"></span>
+                    <h4 class="mb-3">Software Engineer · Backend focus</h4>
+                    <p>I am a passionate Software Engineer who thrives on solving complex challenges and creating useful digital solutions. My work has a strong backend focus, and I bring curiosity, attention to detail, and a practical mindset to every project I undertake.</p>
+                    <p>What sets me apart is my commitment to continuous learning and adaptability in an evolving technology landscape. I enjoy learning by building, exchanging ideas, and turning unfamiliar problems into concrete steps.</p>
+                    <p>Collaboration and continuous improvement are at the heart of my work. Whether working with a team or independently, I see challenges as opportunities to grow and create something that makes a meaningful difference.</p>
+                    <a href="public/assets/cv/Alejandro-Vinokur.pdf" download="Alejandro-Vinokur-Resume" class="btn btn-outline-danger"><i class="ti-download pr-2" aria-hidden="true"></i>Download My CV</a>
                 </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-server icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Database Management</h6>
-                        <p class="subtitle">Proficient in managing relational and non-relational databases like MySQL,
-                            PostgreSQL, and MongoDB for high-performance applications.</p>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-package icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>API Development</h6>
-                        <p class="subtitle">Crafting secure, efficient, and well-documented RESTful and SOAP APIs for
-                            seamless integration across platforms.</p>
-                        <hr>
-                    </div>
+                <div class="col-lg-4 about-card">
+                    <h3 class="font-weight-light">My Expertise</h3><span class="line mb-5"></span>
+                    <div class="expertise-item"><i class="ti-server text-danger" aria-hidden="true"></i><div><h4>Backend systems</h4><p>PHP, Laravel, Symfony, relational data, and maintainable application design.</p></div></div>
+                    <div class="expertise-item"><i class="ti-link text-danger" aria-hidden="true"></i><div><h4>APIs & integrations</h4><p>REST, SOAP, third-party providers, video workflows, and integration boundaries.</p></div></div>
+                    <div class="expertise-item"><i class="ti-loop text-danger" aria-hidden="true"></i><div><h4>Async workflows</h4><p>Jobs, queues, callbacks, background processing, and object-storage lifecycles.</p></div></div>
+                    <div class="expertise-item"><i class="ti-search text-danger" aria-hidden="true"></i><div><h4>Reliability & analysis</h4><p>TDD, observability, troubleshooting, incremental refactoring, and rollout verification.</p></div></div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!--Resume Section-->
-    <section class="section" id="resume">
-        <div class="container">
-            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+        <section class="section resume-section" id="resume" aria-labelledby="resume-title">
+            <div class="container">
+                <h2 class="mb-5" id="resume-title"><span class="text-danger">My</span> Resume</h2>
+                <div class="row align-items-stretch">
+                    <div class="col-lg-5 mb-4"><article class="card resume-card h-100"><div class="card-header"><h3>Experience</h3><span class="line"></span></div><div class="card-body">
+                        <div class="resume-entry"><p class="title text-danger">Jan 2026 — Present</p><h4>Software Engineer · Avature</h4><p>Application-level video capabilities for recruiting and talent workflows, including asynchronous Zoom SDK and S3 recording flows, provider configuration, testing, and production troubleshooting.</p></div>
+                        <div class="resume-entry"><p class="title text-danger">Jul 2023 — Jan 2026</p><h4>Backend Developer · IT ROCK</h4><p>Backend-focused delivery across custom applications using PHP, Laravel, Symfony, APIs, queues, databases, and third-party integrations, with onboarding and code-review support for other developers.</p></div>
+                        <div class="resume-entry"><p class="title text-danger">Nov 2022 — Jul 2023</p><h4>Helpdesk Agent · CleverSoft</h4><p>User and application troubleshooting, technical documentation, onboarding, remote systems support, and internal dashboards.</p></div>
+                    </div></article></div>
+                    <div class="col-lg-3 mb-4"><article class="card resume-card h-100"><div class="card-header"><h3>Education</h3><span class="line"></span></div><div class="card-body">
+                        <div class="resume-entry"><p class="title text-danger">2023 — Paused</p><h4>Systems Engineering</h4><p>University of Buenos Aires</p></div>
+                        <div class="resume-entry"><p class="title text-danger">Completed</p><h4>Informatics specialization</h4><p>Escuela de Minas Dr. Horacio Carrillo — UNJU</p></div>
+                        <div class="resume-entry"><p class="title text-danger">Languages</p><h4>Spanish · Native</h4><p>English · B2 Upper-Intermediate</p></div>
+                    </div></article></div>
+                    <div class="col-lg-4 mb-4"><article class="card resume-card h-100"><div class="card-header"><h3>Core Skills</h3><span class="line"></span></div><div class="card-body skill-groups">
+                        <div><h4>Backend</h4><p>PHP · Laravel · Symfony · Node.js</p></div><div><h4>Integration</h4><p>REST · SOAP · Zoom SDK · External providers</p></div><div><h4>Architecture</h4><p>SOLID · Dependency injection · Jobs and queues</p></div><div><h4>Data & runtime</h4><p>MySQL · PostgreSQL · MongoDB · Docker · AWS S3</p></div><div><h4>Quality & operations</h4><p>TDD · PHPUnit · Selenium · ELK · Kibana</p></div>
+                    </div></article></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-dark metrics-section" aria-label="Professional indicators"><div class="container"><div class="row text-center">
+            <div class="col-6 col-lg-3 metric"><i class="ti-alarm-clock" aria-hidden="true"></i><div><strong>3+ years</strong><span>Professional experience</span></div></div>
+            <div class="col-6 col-lg-3 metric"><i class="ti-layers-alt" aria-hidden="true"></i><div><strong>~10 applications</strong><span>Delivered across roles</span></div></div>
+            <div class="col-6 col-lg-3 metric"><i class="ti-stats-up" aria-hidden="true"></i><div><strong>Estimated 1M+</strong><span>Users reached across products</span></div></div>
+            <div class="col-6 col-lg-3 metric"><svg class="mate-icon" viewBox="0 0 64 64" role="img" aria-label="Mate"><path d="M42 8l5 2-9 25-5-2zM17 27h25l-3 25c-5 5-14 7-21 0zM15 23h29v7H15z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/></svg><div><strong>Daily</strong><span>Mate-powered focus</span></div></div>
+        </div></div></section>
+
+        <section class="section services-section" id="service" aria-labelledby="services-title"><div class="container">
+            <div class="section-heading"><h2 id="services-title"><span class="text-danger">My</span> Services</h2><p>Backend-first support for products that need dependable integrations, automation, and clear technical execution.</p></div>
             <div class="row">
-                <!-- Expertise Section -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Expertise</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2023 - Present</h6>
-                            <p>Full Stack Developer - <strong>IT ROCK</strong></p>
-                            <p class="subtitle">Designing, developing, and maintaining high-performance web applications
-                                using PHP, Laravel, JavaScript, and RESTful APIs. Implementing scalable architectures
-                                and optimizing system performance.</p>
-                            <hr>
-                            <h6 class="title text-danger">2022 - 2023</h6>
-                            <p>Technical Support Analyst - <strong>CleverSoft</strong></p>
-                            <p class="subtitle">Provided IT support, troubleshooting, and maintenance for end-users,
-                                ensuring seamless operations.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Education Section -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Education</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2023 - Present</h6>
-                            <p>Computer Engineering</p>
-                            <p class="subtitle">University of Buenos Aires (UBA)</p>
-                            <hr>
-                            <h6 class="title text-danger">2023</h6>
-                            <p>JavaScript</p>
-                            <p class="subtitle">Fundación Telefónica Movistar</p>
-                            <hr>
-                            <h6 class="title text-danger">2021 - 2022</h6>
-                            <p>Fullstack Developer</p>
-                            <p class="subtitle">Udemy</p>
-                            <hr>
-                            <h6 class="title text-danger">2010 - 2014
-                                <span class="text-muted" style="font-size: 0.85rem; font-style: italic;">(Not
-                                    completed)</span>
-                            </h6>
-                            <p>University Programmer Analyst</p>
-                            <p class="subtitle">Escuela de Minas Dr. Horacio Carillo</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Skills and Languages Section -->
-                <div class="col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Skills</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                            <h6 class="title text-danger">PHP <span class="text-muted" style="font-size: 0.85rem;">(3+ years)</span></h6>
-                            <hr>
-                            <h6 class="title text-danger">Laravel <span class="text-muted"
-                                    style="font-size: 0.85rem;">(3+ years)</span></h6>
-                            <hr>
-                            <h6 class="title text-danger">JavaScript <span class="text-muted"
-                                    style="font-size: 0.85rem;">(2+ year)</span></h6>
-                            <hr>
-                            <h6 class="title text-danger">Jquery <span class="text-muted"
-                                    style="font-size: 0.85rem;">(2+ year)</span></h6>
-                            <hr>
-                            <h6 class="title text-danger">Python <span class="text-muted"
-                                    style="font-size: 0.85rem;">(1+ year)</span></h6>
-                            <hr>
-                            <h6 class="title text-danger">MySQL & PostgreSQL <span class="text-muted"
-                                    style="font-size: 0.85rem;">(2+ years)</span></h6>
-                            <hr>
-                            <h6 class="title text-danger">MongoDB <span class="text-muted"
-                                style="font-size: 0.85rem;">(1+ years)</span></h6>
-                            <hr>
-                            <h6 class="title text-danger">API REST <span class="text-muted"
-                                    style="font-size: 0.85rem;">(2+ years)</span></h6>
-                            <hr>
-                            <h6 class="title text-danger">Docker <span class="text-muted"
-                                    style="font-size: 0.85rem;">(2+ year)</span></h6>
-                                    <hr>
-                            <h6 class="title text-danger">AWS <span class="text-muted"
-                                    style="font-size: 0.85rem;">(1+ year)</span></h6>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Languages</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                            <h6 class="title text-danger">English <span class="text-muted"
-                                    style="font-size: 0.85rem;">(B2 Upper Intermediate)</span></h6>
-                            <hr>
-                            <h6 class="title text-danger">Spanish <span class="text-muted"
-                                    style="font-size: 0.85rem;">(Native)</span></h6>
-                        </div>
-                    </div>
-                </div>
-
-    </section>
-
-    <section class="section bg-dark text-center">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="row ">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">+3</h1>
-                            <p class="text-light mb-1">Experience Years</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">+20</h1>
-                            <p class="text-light mb-1">Project Finished</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">+ 1M</h1>
-                            <p class="text-light mb-1">Happy Users</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">2k</h1>
-                            <p class="text-light mb-1">Coffee Drinked</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="col-md-6 col-lg-4"><article class="card service-card"><i class="ti-server text-danger" aria-hidden="true"></i><h3>Backend & API Development</h3><p>Application backends, REST or SOAP interfaces, data flows, and maintainable Laravel or Symfony solutions.</p></article></div>
+                <div class="col-md-6 col-lg-4"><article class="card service-card"><i class="ti-link text-danger" aria-hidden="true"></i><h3>Integration Engineering</h3><p>Third-party provider connections, authentication, callbacks, lifecycle handling, and resilient integration boundaries.</p></article></div>
+                <div class="col-md-6 col-lg-4"><article class="card service-card"><i class="ti-loop text-danger" aria-hidden="true"></i><h3>Workflow Automation</h3><p>Jobs, queues, scheduled processing, notifications, and asynchronous workflows that reduce repetitive work.</p></article></div>
+                <div class="col-md-6 col-lg-4"><article class="card service-card"><i class="ti-pulse text-danger" aria-hidden="true"></i><h3>Reliability & Troubleshooting</h3><p>Technical analysis, observability, failure diagnosis, safer refactoring, and verification around production changes.</p></article></div>
+                <div class="col-md-6 col-lg-4"><article class="card service-card"><i class="ti-light-bulb text-danger" aria-hidden="true"></i><h3>AI Integration</h3><p>AI services connected to real workflows for assistance, extraction, classification, and human-reviewed automation.</p></article></div>
+                <div class="col-md-6 col-lg-4"><article class="card service-card"><i class="ti-files text-danger" aria-hidden="true"></i><h3>Document & Data Automation</h3><p>OCR, PDF processing, data extraction, callbacks, and structured outputs for operational workflows.</p></article></div>
             </div>
-        </div>
-    </section>
-    <!-- Services -->
-    <section class="section" id="service">
-        <div class="container">
-            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
-            <div class="row">
-                <!-- Custom Software Development -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-desktop text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Custom Software Development</h5>
-                            <p class="subtitle">
-                                I provide tailored software development services, specializing in creating scalable and
-                                efficient web applications, management systems, and custom solutions that meet unique
-                                business needs.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Web Scraping -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-vector text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Web Scraping</h5>
-                            <p class="subtitle">
-                                Expertise in building web scrapers using Python with Playwright or Puppeteer. I deliver
-                                data extraction solutions that streamline decision-making.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Task Automation -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-loop text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Task Automation</h5>
-                            <p class="subtitle">
-                                Automation services integrating AI models with Python and LangChain to simplify
-                                repetitive workflows and improve productivity.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Backend and API Development -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-target text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Backend and API Development</h5>
-                            <p class="subtitle">
-                                I build robust backend systems and RESTful APIs using Laravel, ensuring secure,
-                                scalable, and well-documented interfaces for seamless integration with frontends and
-                                third-party services.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- AI Integration -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-light-bulb text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">AI Integration</h5>
-                            <p class="subtitle">
-                                Integrating AI services with Python and LangChain. I utilize OpenAI models, DocumentAI and
-                                Google Vision AI to automate processes and extract meaningful insights.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Data Base Manager -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-server text-danger" aria-hidden="true"></i>
-                            <!-- Icono representativo para bases de datos -->
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Database Design and Optimization</h5>
-                            <p class="subtitle">
-                                I design, manage, and optimize databases to ensure efficient data storage and retrieval.
-                                I deliver scalable solutions that meet the demands of modern applications.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Technical Support and Consultancy -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-support text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Technical Support and Consultancy</h5>
-                            <p class="subtitle">
-                                Providing expert advice and ongoing support to help businesses adopt innovative
-                                technologies and maintain optimal performance in their digital solutions.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
+        </div></section>
 
-    <section class="section bg-dark py-5">
-        <div class="container text-center">
-            <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance</h2>
-            <button class="btn bg-primary w-lg">Hire me</button>
-        </div>
-    </section>
+        <section class="section bg-dark freelance-section" aria-labelledby="freelance-title"><div class="container"><div class="row align-items-center"><div class="col-lg-8"><p class="eyebrow">Selective freelance</p><h2 class="text-light" id="freelance-title">I Am Available For FreeLance</h2><p>I am primarily focused on my engineering role, while remaining open to selected backend, integration, automation, or technical POC engagements. The best fit is a clearly scoped problem where reliability, communication, and sound engineering decisions matter.</p></div><div class="col-lg-4 text-lg-right"><a class="btn btn-primary btn-rounded" href="#contact">Discuss a project</a></div></div></div></section>
 
-    <!-- Portfolio Section -->
-    <section class="section bg-custom-gray" id="portfolio">
-        <div class="container">
-            <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+        <section class="section bg-custom-gray portfolio-section" id="portfolio" aria-labelledby="portfolio-title"><div class="container">
+            <div class="section-heading"><h2 id="portfolio-title"><span class="text-danger">My</span> Portfolio</h2><p>Selected professional work and applied prototypes, organized by the business problem each system supports.</p></div>
             <div class="portfolio">
-                <div class="filters">
-                    <a href="#" data-filter="*" class="active">All</a>
-                    <a href="#" data-filter=".education">Education & E-learning</a>
-                    <a href="#" data-filter=".marketing">Marketing & Loyalty</a>
-                    <a href="#" data-filter=".automation">Automation & Scraping</a>
-                    <a href="#" data-filter=".recruitment">Recruitment Systems</a>
-                    <a href="#" data-filter=".business">Business Systems & Back Office</a>
+                <div class="filters" role="group" aria-label="Filter portfolio projects"><button type="button" class="active" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="integrations" aria-pressed="false">Integrations</button><button type="button" data-filter="business" aria-pressed="false">Business Platforms</button><button type="button" data-filter="education" aria-pressed="false">Education</button><button type="button" data-filter="automation" aria-pressed="false">Automation & AI</button></div>
+                <div class="portfolio-container" aria-live="polite">
+                    <article class="portfolio-entry" data-categories="integrations"><div class="project-art art-video"><span>Provider → Queue → Storage</span></div><div class="project-body"><span class="maturity maturity-production">Professional · Production</span><h3>Embedded video recording lifecycle</h3><p>A recording workflow that connects an embedded video provider, background processing, object storage, and product availability.</p><ul><li>Zoom SDK</li><li>AWS S3</li><li>Async workflow</li></ul><button type="button" class="project-link" data-project="video">View details <span aria-hidden="true">→</span></button></div></article>
+                    <article class="portfolio-entry" data-categories="business integrations"><div class="project-art art-loyalty"><span>Earn ↔ Rules ↔ Redeem</span></div><div class="project-body"><span class="maturity maturity-professional">Professional</span><h3>Loyalty and rewards platform</h3><p>A business platform where users earn and redeem benefits while operators manage catalogs, rules, and connected services.</p><ul><li>PHP</li><li>Laravel</li><li>REST APIs</li></ul><button type="button" class="project-link" data-project="loyalty">View details <span aria-hidden="true">→</span></button></div></article>
+                    <article class="portfolio-entry" data-categories="business"><div class="project-art art-campaign"><span>Campaign → Eligibility → Result</span></div><div class="project-body"><span class="maturity maturity-professional">Professional</span><h3>Campaign and raffle management</h3><p>A promotion workflow for configuring campaigns, managing participation rules, and publishing controlled results.</p><ul><li>PHP</li><li>Laravel</li><li>Business rules</li></ul><button type="button" class="project-link" data-project="campaign">View details <span aria-hidden="true">→</span></button></div></article>
+                    <article class="portfolio-entry" data-categories="education business"><div class="project-art art-education"><span>Content → Assessment → Progress</span></div><div class="project-body"><span class="maturity maturity-professional">Professional</span><h3>Education and learning platform</h3><p>A role-based product for organizing learning content, activities, assessments, and learner progress.</p><ul><li>Laravel</li><li>Permissions</li><li>Progress flows</li></ul><button type="button" class="project-link" data-project="education">View details <span aria-hidden="true">→</span></button></div></article>
+                    <article class="portfolio-entry" data-categories="education business"><div class="project-art art-tracking"><span>Attendance · Results · Reports</span></div><div class="project-body"><span class="maturity maturity-professional">Professional</span><h3>Student progress tracking</h3><p>An operational system for recording attendance, performance, achievements, and reporting across learning programs.</p><ul><li>Relational data</li><li>REST APIs</li><li>Reporting</li></ul><button type="button" class="project-link" data-project="tracking">View details <span aria-hidden="true">→</span></button></div></article>
+                    <article class="portfolio-entry" data-categories="business"><div class="project-art art-operations"><span>Access · Data · Reporting</span></div><div class="project-body"><span class="maturity maturity-professional">Professional</span><h3>Business operations back office</h3><p>A custom administrative product supporting permissions, internal processes, reporting, and daily operations.</p><ul><li>Laravel</li><li>JavaScript</li><li>Integrations</li></ul><button type="button" class="project-link" data-project="operations">View details <span aria-hidden="true">→</span></button></div></article>
+                    <article class="portfolio-entry" data-categories="business"><div class="project-art art-intranet"><span>People · Tasks · Information</span></div><div class="project-body"><span class="maturity maturity-professional">Professional</span><h3>Internal collaboration platform</h3><p>An intranet-style system for organizing internal information, tasks, documents, and employee workflows.</p><ul><li>Workflow design</li><li>Permissions</li><li>Internal tools</li></ul><button type="button" class="project-link" data-project="intranet">View details <span aria-hidden="true">→</span></button></div></article>
+                    <article class="portfolio-entry" data-categories="automation"><div class="project-art art-scraping"><span>Source → Extract → Normalize</span></div><div class="project-body"><span class="maturity maturity-poc">POC / prototype</span><h3>Automated data extraction</h3><p>A technical exploration of repeatable web extraction, background execution, data cleaning, and API delivery.</p><ul><li>Python</li><li>Scraping</li><li>Background tasks</li></ul><button type="button" class="project-link" data-project="scraping">View details <span aria-hidden="true">→</span></button></div></article>
+                    <article class="portfolio-entry" data-categories="automation"><div class="project-art art-document"><span>PDF → OCR → Structured Data</span></div><div class="project-body"><span class="maturity maturity-poc">POC / prototype</span><h3>Document automation</h3><p>A prototype for processing documents with OCR, background work, callbacks, and AI-assisted extraction.</p><ul><li>Python</li><li>OCR</li><li>OpenAI</li></ul><button type="button" class="project-link" data-project="document">View details <span aria-hidden="true">→</span></button></div></article>
+                    <article class="portfolio-entry" data-categories="automation integrations"><div class="project-art art-recruitment"><span>Input → Assist → Human Review</span></div><div class="project-body"><span class="maturity maturity-poc">POC / prototype</span><h3>Recruitment workflow assistance</h3><p>An exploration of AI-assisted candidate analysis and workflow support with human review kept in the decision loop.</p><ul><li>OpenAI API</li><li>Workflow support</li><li>Human review</li></ul><button type="button" class="project-link" data-project="recruitment">View details <span aria-hidden="true">→</span></button></div></article>
                 </div>
-                <div class="portfolio-container">
-                    <!-- Education & E-learning -->
-                    <div class="col-md-6 col-lg-4 education">
-                        <div class="portfolio-item">
-                            <a class="img-popup" href="#">
-                                <img src="/AleVinokur/public/assets/imgs/education-2.jpg" class="img-fluid portfolio-img" alt="Educational system">
-                            </a>
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">Educational Platform</h6>
-                                    <p class="subtitle" style="display: none;">
-                                        Developed an interactive platform for teachers to upload video lessons, quizzes, and assignments, enabling students to track their learning progress with gamified elements. The platform supports role-based permissions and analytics dashboards for instructors.
-                                    </p>
-                                    <p class="subtitle" style="display: none;">
-                                        <strong>Key Features:</strong> Gamified learning experience, real-time student performance tracking, and secure content management.<br>
-                                        <strong>Technologies:</strong> Laravel, Vue.js, MySQL.
-                                    </p>
-                                    <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 education">
-                        <div class="portfolio-item">
-                            <a class="img-popup" href="#">
-                                <img src="/AleVinokur/public/assets/imgs/education-1.jpg" class="img-fluid portfolio-img" alt="Student tracking system">
-                            </a>
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">Student Tracking</h6>
-                                    <p class="subtitle" style="display: none;">
-                                        Developed a Laravel application using Hexagonal Architecture to monitor performance, attendance and achievements. Provided RESTful endpoints for third-party integration and leveraged PostgreSQL for reliable storage.
-                                    </p>
-                                    <p class="subtitle" style="display: none;">
-                                        <strong>Key Features:</strong> Real-time analytics, secure record management, customizable reports.<br>
-                                        <strong>Technologies:</strong> Laravel, PostgreSQL, Bootstrap.
-                                    </p>
-                                    <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Marketing & Loyalty -->
-                    <div class="col-md-6 col-lg-4 marketing">
-                        <div class="portfolio-item">
-                            <a class="img-popup" href="#">
-                                <img src="/AleVinokur/public/assets/imgs/marketing-2.jpg" class="img-fluid portfolio-img" alt="Raffle system">
-                            </a>
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">Raffle System</h6>
-                                    <p class="subtitle" style="display: none;">
-                                        Built a Laravel microservice to create and manage sweepstake campaigns, boosting customer engagement through dynamic promotions.
-                                    </p>
-                                    <p class="subtitle" style="display: none;">
-                                        <strong>Key Features:</strong> Real-time winner selection, multi-language support, fraud detection.<br>
-                                        <strong>Technologies:</strong> PHP, Laravel.
-                                    </p>
-                                    <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 marketing">
-                        <div class="portfolio-item">
-                            <a class="img-popup" href="#">
-                                <img src="/AleVinokur/public/assets/imgs/marketing-1.png" class="img-fluid portfolio-img" alt="Loyalty system">
-                            </a>
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">Loyalty Program</h6>
-                                    <p class="subtitle" style="display: none;">
-                                        Created a loyalty platform converting invoices into reward points through a RESTful API and Redis-backed asynchronous queues.
-                                    </p>
-                                    <p class="subtitle" style="display: none;">
-                                        <strong>Key Features:</strong> Point calculation engine, catalog management dashboard, customizable rewards.<br>
-                                        <strong>Technologies:</strong> Laravel, JavaScript, MySQL.
-                                    </p>
-                                    <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Automation & Scraping -->
-                    <div class="col-md-6 col-lg-4 automation">
-                        <div class="portfolio-item">
-                            <a class="img-popup" href="#">
-                                <img src="/AleVinokur/public/assets/imgs/automation-1.png" class="img-fluid portfolio-img" alt="Web scraping system">
-                            </a>
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">Web Scraping</h6>
-                                    <p class="subtitle" style="display: none;">
-                                        Engineered automated scraping services using Python, Playwright and FastAPI. Dockerized scripts leverage Redis queues to bypass Cloudflare, sanitize data and expose results via REST API.
-                                    </p>
-                                    <p class="subtitle" style="display: none;">
-                                        <strong>Key Features:</strong> Cloudflare bypass, data cleaning pipelines, real-time scraping via Redis queues.<br>
-                                        <strong>Technologies:</strong> Python, Playwright, FastAPI, Redis.
-                                    </p>
-                                    <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Recruitment Systems -->
-                    <div class="col-md-6 col-lg-4 recruitment">
-                        <div class="portfolio-item">
-                            <a class="img-popup" href="#">
-                                <img src="/AleVinokur/public/assets/imgs/recruitment-1.webp" class="img-fluid portfolio-img" alt="Recruitment system">
-                            </a>
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">Recruitment Platform</h6>
-                                    <p class="subtitle" style="display: none;">
-                                        Designed a recruitment tool that integrates the OpenAI API with multiple models for automated candidate screening and evaluation.
-                                    </p>
-                                    <p class="subtitle" style="display: none;">
-                                        <strong>Key Features:</strong> Candidate matching algorithms, AI-driven recommendations, interview scheduling with event-driven services.<br>
-                                        <strong>Technologies:</strong> PHP, OpenAI API, PostgreSQL.
-                                    </p>
-                                    <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Business Systems & Back Office -->
-                    <div class="col-md-6 col-lg-4 business">
-                        <div class="portfolio-item">
-                            <a class="img-popup" href="#">
-                                <img src="/AleVinokur/public/assets/imgs/business-1.png" class="img-fluid portfolio-img" alt="Back Office">
-                            </a>
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">Back Office Platform</h6>
-                                    <p class="subtitle" style="display: none;">
-                                        Implemented a secure dashboard for managing business operations and metrics using Laravel.
-                                    </p>
-                                    <p class="subtitle" style="display: none;">
-                                        <strong>Key Features:</strong> Customizable widgets, real-time reporting, JWT authentication.<br>
-                                        <strong>Technologies:</strong> Laravel, JavaScript.
-                                    </p>
-                                    <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 business">
-                        <div class="portfolio-item">
-                            <a class="img-popup" href="#">
-                                <img src="/AleVinokur/public/assets/imgs/business-3.png" class="img-fluid portfolio-img" alt="Intranet system">
-                            </a>
-                            <div class="content-holder">
-                                <div class="text-holder">
-                                    <h6 class="title">Intranet System</h6>
-                                    <p class="subtitle" style="display: none;">
-                                        Developed an intranet solution with Laravel and React.js backed by MongoDB to manage internal workflows and communications.
-                                    </p>
-                                    <p class="subtitle" style="display: none;">
-                                        <strong>Key Features:</strong> Document sharing, task management, employee directory, corporate authentication integration.<br>
-                                        <strong>Technologies:</strong> Laravel, React.js, MongoDB.
-                                    </p>
-                                    <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <p class="filter-status sr-only" data-filter-status aria-live="polite">Showing all 10 projects.</p>
             </div>
-        </div>
-    </section>
+        </div></section>
 
-    <!-- Popup Modal -->
-    <div id="project-popup" class="popup">
-        <div class="popup-content">
-          <span class="close">&times;</span>
-          <img id="popup-img" src="" alt="Project Image">
-          <div class="description-holder d-flex flex-column">
-              <div id="popup-title" style="font-size: 32px; font-weight: 800;"></div>
-            <div id="popup-description" style="font-weight: 600;"></div>
-          </div>
-        </div>
-    </div>
+        <section class="section contact-section" id="contact" aria-labelledby="contact-title"><div class="container"><div class="row">
+            <div class="col-lg-8 mb-4"><div class="contact-form-card"><h2 class="contact-title" id="contact-title">Send a message</h2><p>For engineering roles, technical collaboration, or a selective freelance project, share the context and I will reply by email.</p>
+                <form action="https://formspree.io/f/FORM_ID" method="POST" data-contact-form>
+                    <div class="form-row"><div class="form-group col-md-6"><label for="contact-name">Name</label><input class="form-control" id="contact-name" name="name" type="text" autocomplete="name" minlength="2" maxlength="80" required aria-describedby="name-error"><span class="field-error" id="name-error" data-error-for="name"></span></div><div class="form-group col-md-6"><label for="contact-email">Email</label><input class="form-control" id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required aria-describedby="email-error"><span class="field-error" id="email-error" data-error-for="email"></span></div></div>
+                    <div class="form-group"><label for="contact-subject">Subject</label><input class="form-control" id="contact-subject" name="subject" type="text" minlength="3" maxlength="120" required aria-describedby="subject-error"><span class="field-error" id="subject-error" data-error-for="subject"></span></div>
+                    <div class="form-group"><label for="contact-message">Message</label><textarea class="form-control" id="contact-message" name="message" rows="7" minlength="30" maxlength="3000" required aria-describedby="message-help message-error"></textarea><div class="field-support"><span id="message-help">30–3000 characters</span><span data-character-count>0 / 3000</span></div><span class="field-error" id="message-error" data-error-for="message"></span></div>
+                    <div class="honeypot" aria-hidden="true"><label for="company-website">Leave this field empty</label><input id="company-website" name="_gotcha" type="text" tabindex="-1" autocomplete="off"></div><input type="hidden" name="_subject" value="Portfolio contact — Alejandro Vinokur">
+                    <button type="submit" class="btn btn-primary" data-submit-button><span data-submit-label>Send Message</span></button><p class="form-status" data-form-status aria-live="polite"></p>
+                </form>
+            </div></div>
+            <div class="col-lg-4"><aside class="contact-info-card"><h2 class="contact-title">Get in touch</h2><div class="contact-method"><i class="ti-email" aria-hidden="true"></i><div><span>Email</span><a href="mailto:alevinokur@gmail.com">alevinokur@gmail.com</a></div></div><div class="contact-method"><i class="ti-linkedin" aria-hidden="true"></i><div><span>LinkedIn</span><a href="https://www.linkedin.com/in/alejandro-vinokur-758596165/" target="_blank" rel="noreferrer">Connect professionally</a></div></div><div class="contact-method"><i class="ti-github" aria-hidden="true"></i><div><span>GitHub</span><a href="https://github.com/AleVinokur" target="_blank" rel="noreferrer">Review public repositories</a></div></div><p class="contact-note">My phone number remains private and is available in the downloadable resume.</p></aside></div>
+        </div></div></section>
+    </main>
 
-    <!-- End of portfolio section -->
+    <dialog class="project-dialog" data-project-dialog aria-labelledby="project-dialog-title"><button type="button" class="dialog-close" data-dialog-close aria-label="Close project details">×</button><p class="maturity" data-dialog-maturity></p><h2 id="project-dialog-title" data-dialog-title></h2><div class="dialog-content" data-dialog-content></div></dialog>
+    <footer class="footer py-3"><div class="container"><p class="small mb-0 text-light">© <span data-current-year>2026</span> Alejandro Vinokur · Software Engineer</p></div></footer>
 
-    <div class="section contact" id="contact">
-        <div id="map" class="map"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="contact-form-card">
-                        <h4 class="contact-title">Send a message</h4>
-                        <form action="">
-                            <div class="form-group">
-                                <input class="form-control" type="text" placeholder="Name *" required>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email *" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" id=" placeholder=" Message *" rows="7"
-                                    required></textarea>
-                            </div>
-                            <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary">Send Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="contact-info-card">
-                        <h4 class="contact-title">Get in touch</h4>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-mobile icon-md"></i>
-                            </div>
-                            <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (54) 3885864499</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-map-alt icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Location :<br> <span class="text-muted">Buenos Aires, Capital
-                                        Federal, Argentina.</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-envelope icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted">alevinokur@gmail.com</span>
-                                </h6>
-                            </div>
-                        </div>
-                        <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link text-dark" target="_blank" href="#"><i
-                                        class="ti-google" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" target="_blank" href="#"><i
-                                        class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" target="_blank"
-                                    href="https://github.com/AleVinokur"><i class="ti-github"
-                                        aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" target="_blank"
-                                    href="https://www.linkedin.com/in/alejandro-vinokur-758596165/"><i
-                                        class="ti-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="footer py-3">
-        <div class="container">
-            <p class="small mb-0 text-light">
-                &copy;
-                <script>document.write(new Date().getFullYear())</script> Created With <i
-                    class="ti-heart text-danger"></i> By <a href="http://Alejandro Vinokur.com" target="_blank"><span
-                        class="text-danger" title="Bootstrap 4 Themes and Dashboards">Alejandro Vinokur</span></a>
-            </p>
-        </div>
-    </footer>
-
-    <!-- core  -->
-    <script src="/AleVinokur/public/assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="/AleVinokur/public/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-    <script src="/AleVinokur/public/assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Isotope  -->
-    <script src="/AleVinokur/public/assets/vendors/isotope/isotope.pkgd.js"></script>
-
-    <!-- Google mpas -->
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
-
-    <!-- JohnDoe js -->
-    <script src="/AleVinokur/public/assets/js/johndoe.js"></script>
-
+    <script src="public/assets/vendors/jquery/jquery-3.4.1.js"></script><script src="public/assets/vendors/bootstrap/bootstrap.bundle.js"></script><script src="public/assets/vendors/bootstrap/bootstrap.affix.js"></script><script src="public/assets/js/portfolio.js"></script>
 </body>
-
 </html>
