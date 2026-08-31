@@ -1,8 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /storage/
-Disallow: /vendor/
-Disallow: /.env
 
 # Sitemap
-Sitemap: https://tudominio.com/sitemap.xml
+Sitemap: https://alevinokur.github.io/AleVinokur/sitemap.xml

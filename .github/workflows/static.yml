@@ -6,6 +6,9 @@ on:
   push:
     branches: ["main"]
 
+  pull_request:
+    branches: ["main"]
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -22,8 +25,26 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate static site
+        run: npm run test:static
+        env:
+          # Review can proceed before the public Formspree ID is supplied.
+          # Pushes to main still fail validation while FORM_ID is present.
+          ALLOW_FORM_PLACEHOLDER: ${{ github.event_name == 'pull_request' && '1' || '0' }}
+
+  # Deploy only after validation and never from a pull request.
   deploy:
+    if: github.event_name != 'pull_request'
+    needs: validate
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -33,11 +54,17 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Assemble static site
+        run: |
+          mkdir -p _site/public
+          cp index.html robots.txt sitemap.xml _site/
+          cp -R public/assets _site/public/
+          cp public/googlecaJgGMBs13zwWyTSzu7QguiHSImai_CjC2OhndvVVqc.html _site/
+          touch _site/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: '_site'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
